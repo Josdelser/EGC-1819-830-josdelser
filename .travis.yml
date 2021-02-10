@@ -6,7 +6,7 @@ addons:
   postgresql: "9.4"
 before_script:
   - psql -U postgres -c "create user decide830 password 'decide830'"
-  - psql -U postgres -c "create database decide 100 owner decide830"
+  - psql -U postgres -c "create database decide100 owner decide830"
   - psql -U postgres -c "ALTER USER decide830 CREATEDB"
 language: python
 python:
